@@ -1,14 +1,58 @@
-h1 {
-  color: black;
-  font-family: "Comic Neue", cursive;
+:root {
+  --branding-color: #6eaff7;
+  --secondary-color: #f0fbff;
+  --heading-font-family: "Comic Neue", cursive;
+  --default-font-family: "Comic Neue", cursive;
+}
 
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
   font-weight: bold;
 }
 
+h1 {
+  font-size: 96px;
+}
+
 p {
-  font-family: "Comic Neue", cursive;
   font-weight: normal;
 }
-body {
-  background: yellow;
+
+.hero {
+  background: var(--secondary-color);
+  text-align: center;
+  padding: 160px 20px;
+}
+
+.hero p {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  color: #272142;
+}
+
+.hero h2 {
+  font-family: var(--heading-font-family);
+  font-weight: normal;
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn-branding {
+  background: var(--branding-color);
+  border-radius: 4px;
+  color: white;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
 }
